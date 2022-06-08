@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace WinApp_Application
 {
-    public partial class TopChart_UC : UserControl
+    public partial class TopChartPage_UC : UserControl
     {
-        public TopChart_UC()
+        public TopChartPage_UC()
         {
             InitializeComponent();
         }

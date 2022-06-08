@@ -166,6 +166,12 @@
     <Compile Include="Home_UC.Designer.cs">
       <DependentUpon>Home_UC.cs</DependentUpon>
     </Compile>
+    <Compile Include="KidsPage_UC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="KidsPage_UC.Designer.cs">
+      <DependentUpon>KidsPage_UC.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="TopChartApplication_UC.cs">
@@ -174,11 +180,11 @@
     <Compile Include="TopChartApplication_UC.Designer.cs">
       <DependentUpon>TopChartApplication_UC.cs</DependentUpon>
     </Compile>
-    <Compile Include="TopChart_UC.cs">
+    <Compile Include="TopChartPage_UC.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="TopChart_UC.Designer.cs">
-      <DependentUpon>TopChart_UC.cs</DependentUpon>
+    <Compile Include="TopChartPage_UC.Designer.cs">
+      <DependentUpon>TopChartPage_UC.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="ApplicationItems.resx">
       <DependentUpon>ApplicationItems.cs</DependentUpon>
@@ -188,6 +194,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Home_UC.resx">
       <DependentUpon>Home_UC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KidsPage_UC.resx">
+      <DependentUpon>KidsPage_UC.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\licenses.licx" />
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -202,8 +211,8 @@
     <EmbeddedResource Include="TopChartApplication_UC.resx">
       <DependentUpon>TopChartApplication_UC.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="TopChart_UC.resx">
-      <DependentUpon>TopChart_UC.cs</DependentUpon>
+    <EmbeddedResource Include="TopChartPage_UC.resx">
+      <DependentUpon>TopChartPage_UC.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
