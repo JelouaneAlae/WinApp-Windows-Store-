@@ -30,87 +30,88 @@ namespace WinApp_Application
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ApplicationItems));
-            this.bunifuImageButton1 = new Bunifu.UI.WinForms.BunifuImageButton();
-            this.bunifuLabel1 = new Bunifu.UI.WinForms.BunifuLabel();
-            this.bunifuLabel2 = new Bunifu.UI.WinForms.BunifuLabel();
+            this.imageAppli = new Bunifu.UI.WinForms.BunifuImageButton();
+            this.txtAppname = new Bunifu.UI.WinForms.BunifuLabel();
+            this.txtPriceApp = new Bunifu.UI.WinForms.BunifuLabel();
             this.SuspendLayout();
             // 
-            // bunifuImageButton1
+            // imageAppli
             // 
-            this.bunifuImageButton1.ActiveImage = null;
-            this.bunifuImageButton1.AllowAnimations = true;
-            this.bunifuImageButton1.AllowBuffering = false;
-            this.bunifuImageButton1.AllowToggling = false;
-            this.bunifuImageButton1.AllowZooming = true;
-            this.bunifuImageButton1.AllowZoomingOnFocus = false;
-            this.bunifuImageButton1.BackColor = System.Drawing.Color.Transparent;
-            this.bunifuImageButton1.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.bunifuImageButton1.ErrorImage = ((System.Drawing.Image)(resources.GetObject("bunifuImageButton1.ErrorImage")));
-            this.bunifuImageButton1.FadeWhenInactive = false;
-            this.bunifuImageButton1.Flip = Bunifu.UI.WinForms.BunifuImageButton.FlipOrientation.Normal;
-            this.bunifuImageButton1.Image = ((System.Drawing.Image)(resources.GetObject("bunifuImageButton1.Image")));
-            this.bunifuImageButton1.ImageActive = null;
-            this.bunifuImageButton1.ImageLocation = null;
-            this.bunifuImageButton1.ImageMargin = 20;
-            this.bunifuImageButton1.ImageSize = new System.Drawing.Size(95, 88);
-            this.bunifuImageButton1.ImageZoomSize = new System.Drawing.Size(115, 108);
-            this.bunifuImageButton1.InitialImage = ((System.Drawing.Image)(resources.GetObject("bunifuImageButton1.InitialImage")));
-            this.bunifuImageButton1.Location = new System.Drawing.Point(3, 1);
-            this.bunifuImageButton1.Name = "bunifuImageButton1";
-            this.bunifuImageButton1.Rotation = 0;
-            this.bunifuImageButton1.ShowActiveImage = true;
-            this.bunifuImageButton1.ShowCursorChanges = true;
-            this.bunifuImageButton1.ShowImageBorders = true;
-            this.bunifuImageButton1.ShowSizeMarkers = false;
-            this.bunifuImageButton1.Size = new System.Drawing.Size(115, 108);
-            this.bunifuImageButton1.TabIndex = 0;
-            this.bunifuImageButton1.ToolTipText = "";
-            this.bunifuImageButton1.WaitOnLoad = false;
-            this.bunifuImageButton1.Zoom = 20;
-            this.bunifuImageButton1.ZoomSpeed = 10;
+            this.imageAppli.ActiveImage = null;
+            this.imageAppli.AllowAnimations = true;
+            this.imageAppli.AllowBuffering = false;
+            this.imageAppli.AllowToggling = false;
+            this.imageAppli.AllowZooming = true;
+            this.imageAppli.AllowZoomingOnFocus = false;
+            this.imageAppli.BackColor = System.Drawing.Color.Transparent;
+            this.imageAppli.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.imageAppli.ErrorImage = ((System.Drawing.Image)(resources.GetObject("imageAppli.ErrorImage")));
+            this.imageAppli.FadeWhenInactive = false;
+            this.imageAppli.Flip = Bunifu.UI.WinForms.BunifuImageButton.FlipOrientation.Normal;
+            this.imageAppli.Image = ((System.Drawing.Image)(resources.GetObject("imageAppli.Image")));
+            this.imageAppli.ImageActive = null;
+            this.imageAppli.ImageLocation = null;
+            this.imageAppli.ImageMargin = 20;
+            this.imageAppli.ImageSize = new System.Drawing.Size(95, 88);
+            this.imageAppli.ImageZoomSize = new System.Drawing.Size(115, 108);
+            this.imageAppli.InitialImage = ((System.Drawing.Image)(resources.GetObject("imageAppli.InitialImage")));
+            this.imageAppli.Location = new System.Drawing.Point(3, 1);
+            this.imageAppli.Name = "imageAppli";
+            this.imageAppli.Rotation = 0;
+            this.imageAppli.ShowActiveImage = true;
+            this.imageAppli.ShowCursorChanges = true;
+            this.imageAppli.ShowImageBorders = true;
+            this.imageAppli.ShowSizeMarkers = false;
+            this.imageAppli.Size = new System.Drawing.Size(115, 108);
+            this.imageAppli.TabIndex = 0;
+            this.imageAppli.ToolTipText = "";
+            this.imageAppli.WaitOnLoad = false;
+            this.imageAppli.Zoom = 20;
+            this.imageAppli.ZoomSpeed = 10;
             // 
-            // bunifuLabel1
+            // txtAppname
             // 
-            this.bunifuLabel1.AllowParentOverrides = false;
-            this.bunifuLabel1.AutoEllipsis = false;
-            this.bunifuLabel1.Cursor = System.Windows.Forms.Cursors.Default;
-            this.bunifuLabel1.CursorType = System.Windows.Forms.Cursors.Default;
-            this.bunifuLabel1.Font = new System.Drawing.Font("Yu Gothic UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuLabel1.Location = new System.Drawing.Point(9, 110);
-            this.bunifuLabel1.Name = "bunifuLabel1";
-            this.bunifuLabel1.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel1.Size = new System.Drawing.Size(94, 21);
-            this.bunifuLabel1.TabIndex = 1;
-            this.bunifuLabel1.Text = "Pubg Mobile";
-            this.bunifuLabel1.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
-            this.bunifuLabel1.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
-            this.bunifuLabel1.Click += new System.EventHandler(this.bunifuLabel1_Click);
+            this.txtAppname.AllowParentOverrides = false;
+            this.txtAppname.AutoEllipsis = false;
+            this.txtAppname.Cursor = System.Windows.Forms.Cursors.Default;
+            this.txtAppname.CursorType = System.Windows.Forms.Cursors.Default;
+            this.txtAppname.Font = new System.Drawing.Font("Yu Gothic UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtAppname.Location = new System.Drawing.Point(9, 110);
+            this.txtAppname.Name = "txtAppname";
+            this.txtAppname.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.txtAppname.Size = new System.Drawing.Size(94, 21);
+            this.txtAppname.TabIndex = 1;
+            this.txtAppname.Text = "Pubg Mobile";
+            this.txtAppname.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
+            this.txtAppname.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
+            this.txtAppname.Click += new System.EventHandler(this.bunifuLabel1_Click);
             // 
-            // bunifuLabel2
+            // txtPriceApp
             // 
-            this.bunifuLabel2.AllowParentOverrides = false;
-            this.bunifuLabel2.AutoEllipsis = false;
-            this.bunifuLabel2.CursorType = null;
-            this.bunifuLabel2.Font = new System.Drawing.Font("Yu Gothic UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuLabel2.Location = new System.Drawing.Point(9, 136);
-            this.bunifuLabel2.Name = "bunifuLabel2";
-            this.bunifuLabel2.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel2.Size = new System.Drawing.Size(22, 15);
-            this.bunifuLabel2.TabIndex = 2;
-            this.bunifuLabel2.Text = "Free";
-            this.bunifuLabel2.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
-            this.bunifuLabel2.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
+            this.txtPriceApp.AllowParentOverrides = false;
+            this.txtPriceApp.AutoEllipsis = false;
+            this.txtPriceApp.CursorType = null;
+            this.txtPriceApp.Font = new System.Drawing.Font("Yu Gothic UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPriceApp.Location = new System.Drawing.Point(9, 136);
+            this.txtPriceApp.Name = "txtPriceApp";
+            this.txtPriceApp.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.txtPriceApp.Size = new System.Drawing.Size(22, 15);
+            this.txtPriceApp.TabIndex = 2;
+            this.txtPriceApp.Text = "Free";
+            this.txtPriceApp.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
+            this.txtPriceApp.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
             // 
             // ApplicationItems
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.Controls.Add(this.bunifuLabel2);
-            this.Controls.Add(this.bunifuLabel1);
-            this.Controls.Add(this.bunifuImageButton1);
+            this.Controls.Add(this.txtPriceApp);
+            this.Controls.Add(this.txtAppname);
+            this.Controls.Add(this.imageAppli);
             this.Name = "ApplicationItems";
             this.Size = new System.Drawing.Size(121, 154);
+            this.Load += new System.EventHandler(this.ApplicationItems_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -118,8 +119,8 @@ namespace WinApp_Application
 
         #endregion
 
-        private Bunifu.UI.WinForms.BunifuImageButton bunifuImageButton1;
-        private Bunifu.UI.WinForms.BunifuLabel bunifuLabel1;
-        private Bunifu.UI.WinForms.BunifuLabel bunifuLabel2;
+        private Bunifu.UI.WinForms.BunifuImageButton imageAppli;
+        private Bunifu.UI.WinForms.BunifuLabel txtAppname;
+        private Bunifu.UI.WinForms.BunifuLabel txtPriceApp;
     }
 }

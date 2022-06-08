@@ -58,5 +58,36 @@ namespace WinApp_Application
         {
 
         }
+
+        private void ApplicationItems_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        #region
+        public String AppName;
+        public Image AppImage;
+        public String AppPrice;
+
+
+        public string _appname
+        {
+            get { return AppName; }
+            set { AppName = value;  value = txtAppname.Text; }
+        }
+
+        public Image _AppImage
+        {
+            get { return AppImage; }
+            set { AppImage = value;value = imageAppli.Image; }
+        }
+
+        public String _AppPrice
+        {
+            get { return AppPrice; }
+            set { AppPrice = value; value = txtPriceApp.Text; }
+        }
+
+        #endregion
     }
 }

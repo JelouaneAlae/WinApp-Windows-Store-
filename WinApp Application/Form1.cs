@@ -27,13 +27,34 @@ namespace WinApp_Application
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            //this.Controls.Add(home);
-            //home.Location = new Point(12, 105);
+            NavigationUC("home");
+        }
+
+        public void NavigationUC(String UC)
+        {
+            switch (UC) 
+            {
+                case "home":
+                    this.Controls.Remove(TopChart);
+                    this.Controls.Add(home);
+                    home.Location = new Point(12, 105);
+
+                    break;
+
+
+                case "topchart":
+                    this.Controls.Remove(home);
+                    this.Controls.Add(TopChart);
+                    TopChart.Location = new Point(12, 105);
+                    break;
+
+            }
+
         }
 
         private void btnHome_Click(object sender, EventArgs e)
         {
-
+            NavigationUC("home");
         }
 
         private void bunifuLabel1_Click(object sender, EventArgs e)
@@ -43,8 +64,7 @@ namespace WinApp_Application
 
         private void button5_Click(object sender, EventArgs e)
         {
-            this.Controls.Add(TopChart);
-            TopChart.Location = new Point(12, 105);
+            NavigationUC("topchart");
         }
     }
 }

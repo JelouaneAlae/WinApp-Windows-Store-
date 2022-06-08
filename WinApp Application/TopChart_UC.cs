@@ -16,5 +16,25 @@ namespace WinApp_Application
         {
             InitializeComponent();
         }
+
+        private void TopChart_UC_Load(object sender, EventArgs e)
+        {
+            AppItems();
+        }
+        public void AppItems()
+        {
+            TopChartApplication_UC[] App = new TopChartApplication_UC[20];
+
+            for (int i = 0; i < App.Length; i++)
+            {
+                App[i] = new TopChartApplication_UC();
+                flowLayoutPanel1.Controls.Add(App[i]);
+            }
+        }
+
+        private void flowLayoutPanel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

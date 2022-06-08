@@ -16,5 +16,42 @@ namespace WinApp_Application
         {
             InitializeComponent();
         }
+
+        private void bunifuLabel2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void TopChartApplication_UC_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        #region
+        public String AppName;
+        public Image AppImage;
+        public String AppCompany;
+
+
+        public string _appname
+        {
+            get { return AppName; }
+            set { AppName = value; value = lblAppName.Text; }
+        }
+
+        public Image _AppImage
+        {
+            get { return AppImage; }
+            set { AppImage = value; value = imgAppImage.Image; }
+        }
+
+        public String _AppCompany
+        {
+            get { return AppCompany; }
+            set { AppCompany = value; value = lblAppCompany.Text; }
+        }
+
+        #endregion
+
     }
 }
