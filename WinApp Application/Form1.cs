@@ -12,6 +12,8 @@ namespace WinApp_Application
 {
     public partial class Form1 : Form
     {
+        static Home_UC home = new Home_UC();
+        static TopChart_UC TopChart = new TopChart_UC();
         public Form1()
         {
             InitializeComponent();
@@ -25,17 +27,24 @@ namespace WinApp_Application
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            //this.Controls.Add(home);
+            //home.Location = new Point(12, 105);
+        }
+
+        private void btnHome_Click(object sender, EventArgs e)
+        {
 
         }
 
-        public void ListApp()
+        private void bunifuLabel1_Click(object sender, EventArgs e)
         {
-            ApplicationItems[] Applist = new ApplicationItems[20];
-            for (int i = 0; i< Applist.Length; i++)
-            {
-                Applist[i] = new ApplicationItems();
-                flowLayoutPanel1.Controls.Add(Applist[i]);
-            }
+
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            this.Controls.Add(TopChart);
+            TopChart.Location = new Point(12, 105);
         }
     }
 }

@@ -53,5 +53,10 @@ namespace WinApp_Application
 
 
         #endregion
+
+        private void bunifuLabel1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

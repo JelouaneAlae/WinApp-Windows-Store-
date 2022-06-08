@@ -160,13 +160,34 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Home_UC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Home_UC.Designer.cs">
+      <DependentUpon>Home_UC.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TopChartApplication_UC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="TopChartApplication_UC.Designer.cs">
+      <DependentUpon>TopChartApplication_UC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TopChart_UC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="TopChart_UC.Designer.cs">
+      <DependentUpon>TopChart_UC.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="ApplicationItems.resx">
       <DependentUpon>ApplicationItems.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Home_UC.resx">
+      <DependentUpon>Home_UC.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\licenses.licx" />
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -178,6 +199,12 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="TopChartApplication_UC.resx">
+      <DependentUpon>TopChartApplication_UC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TopChart_UC.resx">
+      <DependentUpon>TopChart_UC.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
