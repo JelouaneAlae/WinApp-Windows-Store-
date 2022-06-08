@@ -17,11 +17,6 @@ namespace WinApp_Application
             InitializeComponent();
         }
 
-        private void ApplicationItems_Load(object sender, EventArgs e)
-        {
-
-        }
-
         #region proprety
 
 

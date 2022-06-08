@@ -109,7 +109,6 @@ namespace WinApp_Application
             this.Controls.Add(this.bunifuImageButton1);
             this.Name = "ApplicationItems";
             this.Size = new System.Drawing.Size(169, 207);
-            this.Load += new System.EventHandler(this.ApplicationItems_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
