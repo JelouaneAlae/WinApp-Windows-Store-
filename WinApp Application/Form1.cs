@@ -15,6 +15,7 @@ namespace WinApp_Application
         static Home_UC home = new Home_UC();
         static TopChartPage_UC TopChart = new TopChartPage_UC();
         static KidsPage_UC Kids = new KidsPage_UC();
+        static GamingPage_UC Gaming = new GamingPage_UC();
         public Form1()
         {
             InitializeComponent();
@@ -37,25 +38,37 @@ namespace WinApp_Application
             {
                 case "home":
                     this.Controls.Remove(TopChart);
+                    this.Controls.Remove(Gaming);
                     this.Controls.Remove(Kids);
                     this.Controls.Add(home);
                     home.Location = new Point(12, 105);
-
                     break;
 
 
                 case "topchart":
                     this.Controls.Remove(home);
                     this.Controls.Add(TopChart);
+                    this.Controls.Remove(Gaming);
                     this.Controls.Remove(Kids);
                     TopChart.Location = new Point(12, 105);
                     break;
 
+
                 case "kids":
                     this.Controls.Remove(home);
                     this.Controls.Add(Kids);
+                    this.Controls.Remove(Gaming);
                     this.Controls.Remove(TopChart);
                     Kids.Location = new Point(12, 105);
+                    break;
+
+
+                case "gaming":
+                    this.Controls.Remove(home);
+                    this.Controls.Remove(Kids);
+                    this.Controls.Add(Gaming);
+                    this.Controls.Remove(TopChart);
+                    Gaming.Location = new Point(12, 105);
                     break;
 
             }
@@ -80,6 +93,11 @@ namespace WinApp_Application
         private void button6_Click(object sender, EventArgs e)
         {
             NavigationUC("kids");
+        }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            NavigationUC("gaming");
         }
     }
 }
