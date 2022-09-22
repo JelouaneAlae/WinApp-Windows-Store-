@@ -38,5 +38,23 @@ namespace WinApp_Application
                 flowLayoutPanel2.Controls.Add(Applist[i]);
             }
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            if (flowLayoutPanel1.HorizontalScroll.Value != 0)
+            {
+                flowLayoutPanel1.HorizontalScroll.Value -= 60;
+                flowLayoutPanel1.PerformLayout();
+            }
+
+        }
+
+        private void btnScrollNext_Click(object sender, EventArgs e)
+        {
+
+                flowLayoutPanel1.HorizontalScroll.Value += 60;
+                flowLayoutPanel1.PerformLayout();
+
+        }
     }
 }

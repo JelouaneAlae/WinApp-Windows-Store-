@@ -99,5 +99,20 @@ namespace WinApp_Application
         {
             NavigationUC("gaming");
         }
+
+        private void button3_MouseHover(object sender, EventArgs e)
+        {
+            //btnProfile.BackColor = Color.FromArgb(64, 64, 64);
+        }
+
+        private void btnProfile_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+
+        }
     }
 }
