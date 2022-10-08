@@ -112,6 +112,7 @@ namespace WinApp_Application
             this.bunifuDropdown1.Name = "bunifuDropdown1";
             this.bunifuDropdown1.Size = new System.Drawing.Size(205, 32);
             this.bunifuDropdown1.TabIndex = 2;
+            this.bunifuDropdown1.Text = null;
             this.bunifuDropdown1.TextAlignment = Bunifu.UI.WinForms.BunifuDropdown.TextAlign.Left;
             this.bunifuDropdown1.TextLeftMargin = 5;
             // 
@@ -297,6 +298,7 @@ namespace WinApp_Application
             this.bunifuDatePicker1.DisabledColor = System.Drawing.Color.Gray;
             this.bunifuDatePicker1.DisplayWeekNumbers = false;
             this.bunifuDatePicker1.DPHeight = 0;
+            this.bunifuDatePicker1.DropDownAlign = System.Windows.Forms.LeftRightAlignment.Right;
             this.bunifuDatePicker1.FillDatePicker = false;
             this.bunifuDatePicker1.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.bunifuDatePicker1.ForeColor = System.Drawing.Color.Black;
@@ -305,7 +307,7 @@ namespace WinApp_Application
             this.bunifuDatePicker1.IconLocation = Bunifu.UI.WinForms.BunifuDatePicker.Indicator.Right;
             this.bunifuDatePicker1.LeftTextMargin = 5;
             this.bunifuDatePicker1.Location = new System.Drawing.Point(486, 87);
-            this.bunifuDatePicker1.MinimumSize = new System.Drawing.Size(0, 32);
+            this.bunifuDatePicker1.MinimumSize = new System.Drawing.Size(4, 32);
             this.bunifuDatePicker1.Name = "bunifuDatePicker1";
             this.bunifuDatePicker1.Size = new System.Drawing.Size(249, 32);
             this.bunifuDatePicker1.TabIndex = 8;
@@ -322,6 +324,7 @@ namespace WinApp_Application
             this.bunifuDatePicker2.DisabledColor = System.Drawing.Color.Gray;
             this.bunifuDatePicker2.DisplayWeekNumbers = false;
             this.bunifuDatePicker2.DPHeight = 0;
+            this.bunifuDatePicker2.DropDownAlign = System.Windows.Forms.LeftRightAlignment.Right;
             this.bunifuDatePicker2.FillDatePicker = false;
             this.bunifuDatePicker2.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.bunifuDatePicker2.ForeColor = System.Drawing.Color.Black;
@@ -330,7 +333,7 @@ namespace WinApp_Application
             this.bunifuDatePicker2.IconLocation = Bunifu.UI.WinForms.BunifuDatePicker.Indicator.Right;
             this.bunifuDatePicker2.LeftTextMargin = 5;
             this.bunifuDatePicker2.Location = new System.Drawing.Point(486, 125);
-            this.bunifuDatePicker2.MinimumSize = new System.Drawing.Size(0, 32);
+            this.bunifuDatePicker2.MinimumSize = new System.Drawing.Size(4, 32);
             this.bunifuDatePicker2.Name = "bunifuDatePicker2";
             this.bunifuDatePicker2.Size = new System.Drawing.Size(249, 32);
             this.bunifuDatePicker2.TabIndex = 9;
@@ -515,6 +518,7 @@ namespace WinApp_Application
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.White;
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.pictureBox1);

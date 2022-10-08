@@ -133,5 +133,10 @@ namespace WinApp_Application
         {
             NavigationUC("Application");
         }
+
+        private void button1_MouseHover(object sender, EventArgs e)
+        {
+            //BackColor = Color.Transparent;
+        }
     }
 }
