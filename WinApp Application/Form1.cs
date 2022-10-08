@@ -16,6 +16,7 @@ namespace WinApp_Application
         static TopChartPage_UC TopChart = new TopChartPage_UC();
         static KidsPage_UC Kids = new KidsPage_UC();
         static GamingPage_UC Gaming = new GamingPage_UC();
+        static Add_App_UC application = new Add_App_UC();
         public Form1()
         {
             InitializeComponent();
@@ -38,6 +39,7 @@ namespace WinApp_Application
             {
                 case "home":
                     this.Controls.Remove(TopChart);
+                    this.Controls.Remove(application);
                     this.Controls.Remove(Gaming);
                     this.Controls.Remove(Kids);
                     this.Controls.Add(home);
@@ -47,6 +49,7 @@ namespace WinApp_Application
 
                 case "topchart":
                     this.Controls.Remove(home);
+                    this.Controls.Remove(application);
                     this.Controls.Add(TopChart);
                     this.Controls.Remove(Gaming);
                     this.Controls.Remove(Kids);
@@ -57,6 +60,7 @@ namespace WinApp_Application
                 case "kids":
                     this.Controls.Remove(home);
                     this.Controls.Add(Kids);
+                    this.Controls.Remove(application);
                     this.Controls.Remove(Gaming);
                     this.Controls.Remove(TopChart);
                     Kids.Location = new Point(12, 105);
@@ -66,9 +70,19 @@ namespace WinApp_Application
                 case "gaming":
                     this.Controls.Remove(home);
                     this.Controls.Remove(Kids);
+                    this.Controls.Remove(application);
                     this.Controls.Add(Gaming);
                     this.Controls.Remove(TopChart);
                     Gaming.Location = new Point(12, 105);
+                    break;
+
+                case "Application":
+                    this.Controls.Remove(home);
+                    this.Controls.Remove(Kids);
+                    this.Controls.Remove(Gaming);
+                    this.Controls.Remove(TopChart);
+                    this.Controls.Add(application);
+                    application.Location = new Point(12, 105);
                     break;
 
             }
@@ -113,6 +127,11 @@ namespace WinApp_Application
         private void button1_Click_1(object sender, EventArgs e)
         {
 
+        }
+
+        private void button1_Click_2(object sender, EventArgs e)
+        {
+            NavigationUC("Application");
         }
     }
 }

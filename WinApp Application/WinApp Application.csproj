@@ -148,6 +148,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Add_App_UC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Add_App_UC.Designer.cs">
+      <DependentUpon>Add_App_UC.cs</DependentUpon>
+    </Compile>
     <Compile Include="ApplicationItems.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -192,6 +198,9 @@
     <Compile Include="TopChartPage_UC.Designer.cs">
       <DependentUpon>TopChartPage_UC.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Add_App_UC.resx">
+      <DependentUpon>Add_App_UC.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ApplicationItems.resx">
       <DependentUpon>ApplicationItems.cs</DependentUpon>
     </EmbeddedResource>
