@@ -1,7 +1,7 @@
 ﻿
 namespace WinApp_Application
 {
-    partial class Form1
+    partial class Main_Form
     {
         /// <summary>
         /// Required designer variable.
@@ -29,33 +29,30 @@ namespace WinApp_Application
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Main_Form));
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties1 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties2 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties3 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties4 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             this.panel1 = new System.Windows.Forms.Panel();
             this.button1 = new System.Windows.Forms.Button();
-            this.bunifuPictureBox1 = new Bunifu.UI.WinForms.BunifuPictureBox();
             this.btnProfile = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.bunifuTextBox1 = new Bunifu.UI.WinForms.BunifuTextBox();
-            this.bunifuPanel2 = new Bunifu.UI.WinForms.BunifuPanel();
+            this.pnlmenu = new Bunifu.UI.WinForms.BunifuPanel();
             this.button8 = new System.Windows.Forms.Button();
             this.button7 = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
             this.btnHome = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.bunifuPictureBox1)).BeginInit();
-            this.bunifuPanel2.SuspendLayout();
+            this.pnlmenu.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             this.panel1.Controls.Add(this.button1);
-            this.panel1.Controls.Add(this.bunifuPictureBox1);
             this.panel1.Controls.Add(this.btnProfile);
             this.panel1.Controls.Add(this.button2);
             this.panel1.Controls.Add(this.bunifuTextBox1);
@@ -69,7 +66,7 @@ namespace WinApp_Application
             // 
             this.button1.BackColor = System.Drawing.Color.Transparent;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Yu Gothic UI", 13F, System.Drawing.FontStyle.Bold);
+            this.button1.Font = new System.Drawing.Font("Yu Gothic UI", 14.25F, System.Drawing.FontStyle.Bold);
             this.button1.ForeColor = System.Drawing.Color.White;
             this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
             this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -82,22 +79,6 @@ namespace WinApp_Application
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click_2);
             this.button1.MouseHover += new System.EventHandler(this.button1_MouseHover);
-            // 
-            // bunifuPictureBox1
-            // 
-            this.bunifuPictureBox1.AllowFocused = false;
-            this.bunifuPictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.bunifuPictureBox1.AutoSizeHeight = true;
-            this.bunifuPictureBox1.BorderRadius = 0;
-            this.bunifuPictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("bunifuPictureBox1.Image")));
-            this.bunifuPictureBox1.IsCircle = true;
-            this.bunifuPictureBox1.Location = new System.Drawing.Point(-5, -18);
-            this.bunifuPictureBox1.Name = "bunifuPictureBox1";
-            this.bunifuPictureBox1.Size = new System.Drawing.Size(102, 102);
-            this.bunifuPictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.bunifuPictureBox1.TabIndex = 6;
-            this.bunifuPictureBox1.TabStop = false;
-            this.bunifuPictureBox1.Type = Bunifu.UI.WinForms.BunifuPictureBox.Types.Square;
             // 
             // btnProfile
             // 
@@ -189,7 +170,7 @@ namespace WinApp_Application
             this.bunifuTextBox1.SelectionLength = 0;
             this.bunifuTextBox1.SelectionStart = 0;
             this.bunifuTextBox1.ShortcutsEnabled = true;
-            this.bunifuTextBox1.Size = new System.Drawing.Size(207, 36);
+            this.bunifuTextBox1.Size = new System.Drawing.Size(207, 39);
             this.bunifuTextBox1.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
             this.bunifuTextBox1.TabIndex = 1;
             this.bunifuTextBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -199,26 +180,27 @@ namespace WinApp_Application
             this.bunifuTextBox1.TextPlaceholder = "  Search";
             this.bunifuTextBox1.UseSystemPasswordChar = false;
             this.bunifuTextBox1.WordWrap = true;
+            this.bunifuTextBox1.TextChanged += new System.EventHandler(this.bunifuTextBox1_TextChanged);
             // 
-            // bunifuPanel2
+            // pnlmenu
             // 
-            this.bunifuPanel2.BackgroundColor = System.Drawing.Color.White;
-            this.bunifuPanel2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuPanel2.BackgroundImage")));
-            this.bunifuPanel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.bunifuPanel2.BorderColor = System.Drawing.Color.Transparent;
-            this.bunifuPanel2.BorderRadius = 3;
-            this.bunifuPanel2.BorderThickness = 1;
-            this.bunifuPanel2.Controls.Add(this.button8);
-            this.bunifuPanel2.Controls.Add(this.button7);
-            this.bunifuPanel2.Controls.Add(this.button6);
-            this.bunifuPanel2.Controls.Add(this.button5);
-            this.bunifuPanel2.Controls.Add(this.btnHome);
-            this.bunifuPanel2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.bunifuPanel2.Location = new System.Drawing.Point(0, 53);
-            this.bunifuPanel2.Name = "bunifuPanel2";
-            this.bunifuPanel2.ShowBorders = true;
-            this.bunifuPanel2.Size = new System.Drawing.Size(890, 48);
-            this.bunifuPanel2.TabIndex = 5;
+            this.pnlmenu.BackgroundColor = System.Drawing.Color.White;
+            this.pnlmenu.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pnlmenu.BackgroundImage")));
+            this.pnlmenu.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pnlmenu.BorderColor = System.Drawing.Color.Transparent;
+            this.pnlmenu.BorderRadius = 3;
+            this.pnlmenu.BorderThickness = 1;
+            this.pnlmenu.Controls.Add(this.button8);
+            this.pnlmenu.Controls.Add(this.button7);
+            this.pnlmenu.Controls.Add(this.button6);
+            this.pnlmenu.Controls.Add(this.button5);
+            this.pnlmenu.Controls.Add(this.btnHome);
+            this.pnlmenu.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pnlmenu.Location = new System.Drawing.Point(0, 53);
+            this.pnlmenu.Name = "pnlmenu";
+            this.pnlmenu.ShowBorders = true;
+            this.pnlmenu.Size = new System.Drawing.Size(890, 48);
+            this.pnlmenu.TabIndex = 5;
             // 
             // button8
             // 
@@ -289,22 +271,21 @@ namespace WinApp_Application
             this.btnHome.UseVisualStyleBackColor = false;
             this.btnHome.Click += new System.EventHandler(this.btnHome_Click);
             // 
-            // Form1
+            // Main_Form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Gainsboro;
             this.ClientSize = new System.Drawing.Size(890, 523);
-            this.Controls.Add(this.bunifuPanel2);
+            this.Controls.Add(this.pnlmenu);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
-            this.Name = "Form1";
+            this.Name = "Main_Form";
             this.Text = "WinApp";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.panel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.bunifuPictureBox1)).EndInit();
-            this.bunifuPanel2.ResumeLayout(false);
+            this.pnlmenu.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -315,14 +296,13 @@ namespace WinApp_Application
         private Bunifu.UI.WinForms.BunifuTextBox bunifuTextBox1;
         private System.Windows.Forms.Button btnProfile;
         private System.Windows.Forms.Button button2;
-        private Bunifu.UI.WinForms.BunifuPanel bunifuPanel2;
-        private System.Windows.Forms.Button btnHome;
         private System.Windows.Forms.Button button8;
-        private System.Windows.Forms.Button button7;
         private System.Windows.Forms.Button button6;
         private System.Windows.Forms.Button button5;
-        private Bunifu.UI.WinForms.BunifuPictureBox bunifuPictureBox1;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button7;
+        internal System.Windows.Forms.Button btnHome;
+        internal Bunifu.UI.WinForms.BunifuPanel pnlmenu;
     }
 }
 

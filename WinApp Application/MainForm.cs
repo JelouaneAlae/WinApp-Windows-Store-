@@ -10,14 +10,14 @@ using System.Windows.Forms;
 
 namespace WinApp_Application
 {
-    public partial class Form1 : Form
+    public partial class Main_Form : Form
     {
         static Home_UC home = new Home_UC();
         static TopChartPage_UC TopChart = new TopChartPage_UC();
         static KidsPage_UC Kids = new KidsPage_UC();
         static GamingPage_UC Gaming = new GamingPage_UC();
         static Add_App_UC application = new Add_App_UC();
-        public Form1()
+        public Main_Form()
         {
             InitializeComponent();
         }
@@ -33,7 +33,7 @@ namespace WinApp_Application
             NavigationUC("home");
         }
 
-        public void NavigationUC(String UC)
+        internal void NavigationUC(String UC)
         {
             switch (UC) 
             {
@@ -82,7 +82,7 @@ namespace WinApp_Application
                     this.Controls.Remove(Gaming);
                     this.Controls.Remove(TopChart);
                     this.Controls.Add(application);
-                    application.Location = new Point(12, 105);
+                    application.Location = new Point(10, 50);
                     break;
 
             }
@@ -131,12 +131,31 @@ namespace WinApp_Application
 
         private void button1_Click_2(object sender, EventArgs e)
         {
+            pnlmenu.Visible = false;
             NavigationUC("Application");
         }
 
         private void button1_MouseHover(object sender, EventArgs e)
         {
             //BackColor = Color.Transparent;
+        }
+        //internal void Remove_uc()
+        //{
+        //    foreach (Control C in this.Controls)
+        //    {
+        //        this.Controls.Remove(C);
+        //    }
+        //}
+
+        private void bunifuTextBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        internal void HOME_ADDING()
+        {
+            this.Controls.Add(application);
+            application.Location = new Point(10, 50);
         }
     }
 }
