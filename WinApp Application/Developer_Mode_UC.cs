@@ -11,9 +11,9 @@ using static System.Windows.Forms.DataFormats;
 
 namespace WinApp_Application
 {
-    public partial class Add_App_UC : UserControl
+    public partial class Developer_Mode_UC : UserControl
     {
-        public Add_App_UC()
+        public Developer_Mode_UC()
         {
             InitializeComponent();
         }
@@ -98,6 +98,11 @@ namespace WinApp_Application
         }
 
         private void btnBackToHome_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnBackToHome_Click_2(object sender, EventArgs e)
         {
             var frm = Form.ActiveForm as Main_Form;
             frm.Controls.Remove(this);
