@@ -3,7 +3,7 @@ using System;
 
 namespace WinApp_Application
 {
-    partial class Add_App_UC
+    partial class Developer_Mode_UC
     {
         /// <summary> 
         /// Required designer variable.
@@ -31,7 +31,7 @@ namespace WinApp_Application
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Add_App_UC));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Developer_Mode_UC));
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties1 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties2 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties3 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
@@ -47,7 +47,7 @@ namespace WinApp_Application
             this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
             this.bunifuLabel1 = new Bunifu.UI.WinForms.BunifuLabel();
             this.bunifuPanel1 = new Bunifu.UI.WinForms.BunifuPanel();
-            this.btnBackToHome = new System.Windows.Forms.Button();
+            this.btnBackToHome = new Guna.UI2.WinForms.Guna2Button();
             this.bunifuPanel2 = new Bunifu.UI.WinForms.BunifuPanel();
             this.guna2Button5 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Button4 = new Guna.UI2.WinForms.Guna2Button();
@@ -102,7 +102,7 @@ namespace WinApp_Application
             this.bunifuLabel1.Cursor = System.Windows.Forms.Cursors.Default;
             this.bunifuLabel1.CursorType = System.Windows.Forms.Cursors.Default;
             this.bunifuLabel1.Font = new System.Drawing.Font("Yu Gothic UI", 18.25F, System.Drawing.FontStyle.Bold);
-            this.bunifuLabel1.Location = new System.Drawing.Point(285, 10);
+            this.bunifuLabel1.Location = new System.Drawing.Point(285, 12);
             this.bunifuLabel1.Name = "bunifuLabel1";
             this.bunifuLabel1.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.bunifuLabel1.Size = new System.Drawing.Size(315, 32);
@@ -131,16 +131,24 @@ namespace WinApp_Application
             // 
             // btnBackToHome
             // 
+            this.btnBackToHome.Animated = true;
+            this.btnBackToHome.AnimatedGIF = true;
             this.btnBackToHome.BackColor = System.Drawing.Color.Transparent;
-            this.btnBackToHome.FlatAppearance.BorderSize = 0;
-            this.btnBackToHome.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnBackToHome.BorderRadius = 8;
+            this.btnBackToHome.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnBackToHome.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnBackToHome.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnBackToHome.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnBackToHome.FillColor = System.Drawing.Color.White;
+            this.btnBackToHome.Font = new System.Drawing.Font("Yu Gothic UI", 14.25F, System.Drawing.FontStyle.Bold);
+            this.btnBackToHome.ForeColor = System.Drawing.Color.Black;
             this.btnBackToHome.Image = ((System.Drawing.Image)(resources.GetObject("btnBackToHome.Image")));
-            this.btnBackToHome.Location = new System.Drawing.Point(17, 10);
+            this.btnBackToHome.ImageSize = new System.Drawing.Size(37, 37);
+            this.btnBackToHome.Location = new System.Drawing.Point(17, 12);
             this.btnBackToHome.Name = "btnBackToHome";
             this.btnBackToHome.Size = new System.Drawing.Size(34, 34);
-            this.btnBackToHome.TabIndex = 9;
-            this.btnBackToHome.UseVisualStyleBackColor = false;
-            this.btnBackToHome.Click += new System.EventHandler(this.btnBackToHome_Click_1);
+            this.btnBackToHome.TabIndex = 18;
+            this.btnBackToHome.Click += new System.EventHandler(this.btnBackToHome_Click_2);
             // 
             // bunifuPanel2
             // 
@@ -760,7 +768,7 @@ namespace WinApp_Application
             this.txtAppName.UseSystemPasswordChar = false;
             this.txtAppName.WordWrap = true;
             // 
-            // Add_App_UC
+            // Developer_Mode_UC
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -768,7 +776,7 @@ namespace WinApp_Application
             this.Controls.Add(this.pnlAddApplication);
             this.Controls.Add(this.bunifuPanel2);
             this.Controls.Add(this.bunifuPanel1);
-            this.Name = "Add_App_UC";
+            this.Name = "Developer_Mode_UC";
             this.Size = new System.Drawing.Size(884, 464);
             this.Load += new System.EventHandler(this.Add_App_UC_Load);
             this.bunifuPanel1.ResumeLayout(false);
@@ -807,7 +815,7 @@ namespace WinApp_Application
         private Bunifu.UI.WinForms.BunifuTextBox txtAppName;
         private Guna.UI2.WinForms.Guna2Button btnSubmit;
         private Bunifu.UI.WinForms.BunifuLabel bunifuLabel6;
-        private System.Windows.Forms.Button btnBackToHome;
         private EventHandler btnBcackToHome_Click;
+        private Guna.UI2.WinForms.Guna2Button btnBackToHome;
     }
 }
