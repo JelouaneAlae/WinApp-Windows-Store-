@@ -22,6 +22,7 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -31,6 +32,7 @@
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Bunifu.Licensing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=f89b4760ba7dcb6b, processorArchitecture=MSIL">
@@ -148,11 +150,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Add_App_UC.cs">
+    <Compile Include="Developer_Mode_UC.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Add_App_UC.Designer.cs">
-      <DependentUpon>Add_App_UC.cs</DependentUpon>
+    <Compile Include="Developer_Mode_UC.Designer.cs">
+      <DependentUpon>Developer_Mode_UC.cs</DependentUpon>
     </Compile>
     <Compile Include="ApplicationItems.cs">
       <SubType>UserControl</SubType>
@@ -198,8 +200,56 @@
     <Compile Include="TopChartPage_UC.Designer.cs">
       <DependentUpon>TopChartPage_UC.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Add_App_UC.resx">
-      <DependentUpon>Add_App_UC.cs</DependentUpon>
+    <Compile Include="UC_About.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC_About.Designer.cs">
+      <DependentUpon>UC_About.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC_Category_item.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC_Category_item.Designer.cs">
+      <DependentUpon>UC_Category_item.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC_DM_AddApp.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC_DM_AddApp.Designer.cs">
+      <DependentUpon>UC_DM_AddApp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC_DM_DeleteApp.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC_DM_DeleteApp.Designer.cs">
+      <DependentUpon>UC_DM_DeleteApp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC_DM_ManageAPP.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC_DM_ManageAPP.Designer.cs">
+      <DependentUpon>UC_DM_ManageAPP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC_DM_ManageDevInfo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC_DM_ManageDevInfo.Designer.cs">
+      <DependentUpon>UC_DM_ManageDevInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC_Setting.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC_Setting.Designer.cs">
+      <DependentUpon>UC_Setting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC_Support.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC_Support.Designer.cs">
+      <DependentUpon>UC_Support.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Developer_Mode_UC.resx">
+      <DependentUpon>Developer_Mode_UC.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ApplicationItems.resx">
       <DependentUpon>ApplicationItems.cs</DependentUpon>
@@ -232,6 +282,30 @@
     <EmbeddedResource Include="TopChartPage_UC.resx">
       <DependentUpon>TopChartPage_UC.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="UC_About.resx">
+      <DependentUpon>UC_About.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC_Category_item.resx">
+      <DependentUpon>UC_Category_item.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC_DM_AddApp.resx">
+      <DependentUpon>UC_DM_AddApp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC_DM_DeleteApp.resx">
+      <DependentUpon>UC_DM_DeleteApp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC_DM_ManageAPP.resx">
+      <DependentUpon>UC_DM_ManageAPP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC_DM_ManageDevInfo.resx">
+      <DependentUpon>UC_DM_ManageDevInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC_Setting.resx">
+      <DependentUpon>UC_Setting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC_Support.resx">
+      <DependentUpon>UC_Support.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -246,5 +320,14 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+<<<<<<< Updated upstream
+=======
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+>>>>>>> Stashed changes
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

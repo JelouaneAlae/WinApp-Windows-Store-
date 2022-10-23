@@ -35,6 +35,7 @@ namespace WinApp_Application
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties3 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties4 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             this.panel1 = new System.Windows.Forms.Panel();
+<<<<<<< Updated upstream:WinApp Application/Form1.Designer.cs
             this.button1 = new System.Windows.Forms.Button();
             this.bunifuPictureBox1 = new Bunifu.UI.WinForms.BunifuPictureBox();
             this.btnProfile = new System.Windows.Forms.Button();
@@ -49,35 +50,73 @@ namespace WinApp_Application
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuPictureBox1)).BeginInit();
             this.bunifuPanel2.SuspendLayout();
+=======
+            this.button1 = new Guna.UI2.WinForms.Guna2Button();
+            this.btnBar = new Guna.UI2.WinForms.Guna2Button();
+            this.bunifuTextBox1 = new Bunifu.UI.WinForms.BunifuTextBox();
+            this.pnlmenu = new Bunifu.UI.WinForms.BunifuPanel();
+            this.pnlSlide = new Bunifu.UI.WinForms.BunifuPanel();
+            this.btncategory = new Guna.UI2.WinForms.Guna2Button();
+            this.btnGaming = new Guna.UI2.WinForms.Guna2Button();
+            this.btnTopChar = new Guna.UI2.WinForms.Guna2Button();
+            this.btnKids = new Guna.UI2.WinForms.Guna2Button();
+            this.btnHome = new Guna.UI2.WinForms.Guna2Button();
+            this.pnlBarObtion = new Bunifu.UI.WinForms.BunifuPanel();
+            this.btnBarAbout = new Guna.UI2.WinForms.Guna2Button();
+            this.btnBarSupport = new Guna.UI2.WinForms.Guna2Button();
+            this.btnBarSetting = new Guna.UI2.WinForms.Guna2Button();
+            this.panel1.SuspendLayout();
+            this.pnlmenu.SuspendLayout();
+            this.pnlBarObtion.SuspendLayout();
+>>>>>>> Stashed changes:WinApp Application/MainForm.Designer.cs
             this.SuspendLayout();
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             this.panel1.Controls.Add(this.button1);
+<<<<<<< Updated upstream:WinApp Application/Form1.Designer.cs
             this.panel1.Controls.Add(this.bunifuPictureBox1);
             this.panel1.Controls.Add(this.btnProfile);
             this.panel1.Controls.Add(this.button2);
+=======
+            this.panel1.Controls.Add(this.btnBar);
+>>>>>>> Stashed changes:WinApp Application/MainForm.Designer.cs
             this.panel1.Controls.Add(this.bunifuTextBox1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(890, 53);
+            this.panel1.Size = new System.Drawing.Size(898, 53);
             this.panel1.TabIndex = 0;
             // 
             // button1
             // 
+            this.button1.Animated = true;
+            this.button1.AnimatedGIF = true;
             this.button1.BackColor = System.Drawing.Color.Transparent;
+<<<<<<< Updated upstream:WinApp Application/Form1.Designer.cs
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Yu Gothic UI", 13F, System.Drawing.FontStyle.Bold);
             this.button1.ForeColor = System.Drawing.Color.White;
             this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
             this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.button1.Location = new System.Drawing.Point(589, 9);
+=======
+            this.button1.BorderRadius = 8;
+            this.button1.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.button1.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.button1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.button1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.button1.FillColor = System.Drawing.Color.White;
+            this.button1.Font = new System.Drawing.Font("Yu Gothic UI", 14.25F, System.Drawing.FontStyle.Bold);
+            this.button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.button1.Location = new System.Drawing.Point(644, 9);
+>>>>>>> Stashed changes:WinApp Application/MainForm.Designer.cs
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(191, 35);
-            this.button1.TabIndex = 11;
+            this.button1.TabIndex = 13;
             this.button1.Text = "Developer Mode";
+<<<<<<< Updated upstream:WinApp Application/Form1.Designer.cs
             this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click_2);
@@ -124,6 +163,32 @@ namespace WinApp_Application
             this.button2.Size = new System.Drawing.Size(34, 34);
             this.button2.TabIndex = 5;
             this.button2.UseVisualStyleBackColor = false;
+=======
+            this.button1.Click += new System.EventHandler(this.button1_Click_3);
+            // 
+            // btnBar
+            // 
+            this.btnBar.Animated = true;
+            this.btnBar.AnimatedGIF = true;
+            this.btnBar.BackColor = System.Drawing.Color.Transparent;
+            this.btnBar.BorderRadius = 8;
+            this.btnBar.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnBar.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnBar.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnBar.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnBar.FillColor = System.Drawing.Color.White;
+            this.btnBar.Font = new System.Drawing.Font("Yu Gothic UI", 10F, System.Drawing.FontStyle.Bold);
+            this.btnBar.ForeColor = System.Drawing.Color.White;
+            this.btnBar.Image = ((System.Drawing.Image)(resources.GetObject("btnBar.Image")));
+            this.btnBar.Location = new System.Drawing.Point(841, 9);
+            this.btnBar.Name = "btnBar";
+            this.btnBar.Size = new System.Drawing.Size(37, 34);
+            this.btnBar.TabIndex = 13;
+            this.btnBar.Click += new System.EventHandler(this.btnBar_Click);
+            this.btnBar.MouseDown += new System.Windows.Forms.MouseEventHandler(this.btnBar_MouseDown);
+            this.btnBar.MouseLeave += new System.EventHandler(this.btnBar_MouseLeave);
+            this.btnBar.MouseHover += new System.EventHandler(this.btnBar_MouseHover);
+>>>>>>> Stashed changes:WinApp Application/MainForm.Designer.cs
             // 
             // bunifuTextBox1
             // 
@@ -153,7 +218,7 @@ namespace WinApp_Application
             this.bunifuTextBox1.IconRight = null;
             this.bunifuTextBox1.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.bunifuTextBox1.Lines = new string[0];
-            this.bunifuTextBox1.Location = new System.Drawing.Point(97, 9);
+            this.bunifuTextBox1.Location = new System.Drawing.Point(97, 7);
             this.bunifuTextBox1.MaxLength = 32767;
             this.bunifuTextBox1.MinimumSize = new System.Drawing.Size(1, 1);
             this.bunifuTextBox1.Modified = false;
@@ -202,6 +267,7 @@ namespace WinApp_Application
             // 
             // bunifuPanel2
             // 
+<<<<<<< Updated upstream:WinApp Application/Form1.Designer.cs
             this.bunifuPanel2.BackgroundColor = System.Drawing.Color.White;
             this.bunifuPanel2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuPanel2.BackgroundImage")));
             this.bunifuPanel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
@@ -219,92 +285,268 @@ namespace WinApp_Application
             this.bunifuPanel2.ShowBorders = true;
             this.bunifuPanel2.Size = new System.Drawing.Size(890, 48);
             this.bunifuPanel2.TabIndex = 5;
+=======
+            this.pnlmenu.BackgroundColor = System.Drawing.Color.White;
+            this.pnlmenu.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pnlmenu.BackgroundImage")));
+            this.pnlmenu.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pnlmenu.BorderColor = System.Drawing.Color.Transparent;
+            this.pnlmenu.BorderRadius = 3;
+            this.pnlmenu.BorderThickness = 1;
+            this.pnlmenu.Controls.Add(this.pnlSlide);
+            this.pnlmenu.Controls.Add(this.btncategory);
+            this.pnlmenu.Controls.Add(this.btnGaming);
+            this.pnlmenu.Controls.Add(this.btnTopChar);
+            this.pnlmenu.Controls.Add(this.btnKids);
+            this.pnlmenu.Controls.Add(this.btnHome);
+            this.pnlmenu.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pnlmenu.Location = new System.Drawing.Point(0, 53);
+            this.pnlmenu.Name = "pnlmenu";
+            this.pnlmenu.ShowBorders = true;
+            this.pnlmenu.Size = new System.Drawing.Size(898, 48);
+            this.pnlmenu.TabIndex = 5;
+>>>>>>> Stashed changes:WinApp Application/MainForm.Designer.cs
             // 
-            // button8
+            // pnlSlide
             // 
-            this.button8.BackColor = System.Drawing.Color.Transparent;
-            this.button8.FlatAppearance.BorderSize = 0;
-            this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button8.Font = new System.Drawing.Font("Yu Gothic UI", 14.25F, System.Drawing.FontStyle.Bold);
-            this.button8.Location = new System.Drawing.Point(748, 6);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(116, 37);
-            this.button8.TabIndex = 10;
-            this.button8.Text = "Categorie";
-            this.button8.UseVisualStyleBackColor = false;
+            this.pnlSlide.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.pnlSlide.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pnlSlide.BackgroundImage")));
+            this.pnlSlide.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pnlSlide.BorderColor = System.Drawing.Color.Transparent;
+            this.pnlSlide.BorderRadius = 3;
+            this.pnlSlide.BorderThickness = 1;
+            this.pnlSlide.Location = new System.Drawing.Point(3, 43);
+            this.pnlSlide.Name = "pnlSlide";
+            this.pnlSlide.ShowBorders = true;
+            this.pnlSlide.Size = new System.Drawing.Size(160, 5);
+            this.pnlSlide.TabIndex = 8;
             // 
-            // button7
+            // btncategory
             // 
-            this.button7.BackColor = System.Drawing.Color.Transparent;
-            this.button7.FlatAppearance.BorderSize = 0;
-            this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button7.Font = new System.Drawing.Font("Yu Gothic UI", 14.25F, System.Drawing.FontStyle.Bold);
-            this.button7.Location = new System.Drawing.Point(565, 6);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(116, 37);
-            this.button7.TabIndex = 9;
-            this.button7.Text = "Gaming";
-            this.button7.UseVisualStyleBackColor = false;
-            this.button7.Click += new System.EventHandler(this.button7_Click);
+            this.btncategory.Animated = true;
+            this.btncategory.AnimatedGIF = true;
+            this.btncategory.BackColor = System.Drawing.Color.Transparent;
+            this.btncategory.BorderRadius = 8;
+            this.btncategory.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btncategory.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btncategory.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btncategory.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btncategory.FillColor = System.Drawing.Color.White;
+            this.btncategory.Font = new System.Drawing.Font("Yu Gothic UI", 14.25F, System.Drawing.FontStyle.Bold);
+            this.btncategory.ForeColor = System.Drawing.Color.Black;
+            this.btncategory.ImageAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.btncategory.Location = new System.Drawing.Point(744, 2);
+            this.btncategory.Name = "btncategory";
+            this.btncategory.Size = new System.Drawing.Size(116, 37);
+            this.btncategory.TabIndex = 21;
+            this.btncategory.Text = "Category";
             // 
-            // button6
+            // btnGaming
             // 
-            this.button6.BackColor = System.Drawing.Color.Transparent;
-            this.button6.FlatAppearance.BorderSize = 0;
-            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button6.Font = new System.Drawing.Font("Yu Gothic UI", 14.25F, System.Drawing.FontStyle.Bold);
-            this.button6.Location = new System.Drawing.Point(393, 6);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(116, 37);
-            this.button6.TabIndex = 8;
-            this.button6.Text = "Kids";
-            this.button6.UseVisualStyleBackColor = false;
-            this.button6.Click += new System.EventHandler(this.button6_Click);
+            this.btnGaming.Animated = true;
+            this.btnGaming.AnimatedGIF = true;
+            this.btnGaming.BackColor = System.Drawing.Color.Transparent;
+            this.btnGaming.BorderRadius = 8;
+            this.btnGaming.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnGaming.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnGaming.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnGaming.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnGaming.FillColor = System.Drawing.Color.White;
+            this.btnGaming.Font = new System.Drawing.Font("Yu Gothic UI", 14.25F, System.Drawing.FontStyle.Bold);
+            this.btnGaming.ForeColor = System.Drawing.Color.Black;
+            this.btnGaming.ImageAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.btnGaming.Location = new System.Drawing.Point(568, 3);
+            this.btnGaming.Name = "btnGaming";
+            this.btnGaming.Size = new System.Drawing.Size(116, 37);
+            this.btnGaming.TabIndex = 20;
+            this.btnGaming.Text = "Gaming";
+            this.btnGaming.Click += new System.EventHandler(this.btnGaming_Click);
             // 
-            // button5
+            // btnTopChar
             // 
-            this.button5.BackColor = System.Drawing.Color.Transparent;
-            this.button5.FlatAppearance.BorderSize = 0;
-            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button5.Font = new System.Drawing.Font("Yu Gothic UI", 14.25F, System.Drawing.FontStyle.Bold);
-            this.button5.Location = new System.Drawing.Point(221, 6);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(116, 37);
-            this.button5.TabIndex = 7;
-            this.button5.Text = "Top chart";
-            this.button5.UseVisualStyleBackColor = false;
-            this.button5.Click += new System.EventHandler(this.button5_Click);
+            this.btnTopChar.Animated = true;
+            this.btnTopChar.AnimatedGIF = true;
+            this.btnTopChar.BackColor = System.Drawing.Color.Transparent;
+            this.btnTopChar.BorderRadius = 8;
+            this.btnTopChar.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnTopChar.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnTopChar.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnTopChar.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnTopChar.FillColor = System.Drawing.Color.White;
+            this.btnTopChar.Font = new System.Drawing.Font("Yu Gothic UI", 14.25F, System.Drawing.FontStyle.Bold);
+            this.btnTopChar.ForeColor = System.Drawing.Color.Black;
+            this.btnTopChar.ImageAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.btnTopChar.Location = new System.Drawing.Point(216, 3);
+            this.btnTopChar.Name = "btnTopChar";
+            this.btnTopChar.Size = new System.Drawing.Size(116, 37);
+            this.btnTopChar.TabIndex = 18;
+            this.btnTopChar.Text = "Top chart";
+            this.btnTopChar.Click += new System.EventHandler(this.btnTopChar_Click);
+            // 
+            // btnKids
+            // 
+            this.btnKids.Animated = true;
+            this.btnKids.AnimatedGIF = true;
+            this.btnKids.BackColor = System.Drawing.Color.Transparent;
+            this.btnKids.BorderRadius = 8;
+            this.btnKids.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnKids.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnKids.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnKids.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnKids.FillColor = System.Drawing.Color.White;
+            this.btnKids.Font = new System.Drawing.Font("Yu Gothic UI", 14.25F, System.Drawing.FontStyle.Bold);
+            this.btnKids.ForeColor = System.Drawing.Color.Black;
+            this.btnKids.ImageAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.btnKids.Location = new System.Drawing.Point(392, 2);
+            this.btnKids.Name = "btnKids";
+            this.btnKids.Size = new System.Drawing.Size(116, 37);
+            this.btnKids.TabIndex = 19;
+            this.btnKids.Text = "Kids";
+            this.btnKids.Click += new System.EventHandler(this.btnKids_Click);
             // 
             // btnHome
             // 
+            this.btnHome.Animated = true;
+            this.btnHome.AnimatedGIF = true;
             this.btnHome.BackColor = System.Drawing.Color.Transparent;
-            this.btnHome.FlatAppearance.BorderSize = 0;
-            this.btnHome.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnHome.BorderRadius = 8;
+            this.btnHome.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnHome.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnHome.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnHome.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnHome.FillColor = System.Drawing.Color.White;
             this.btnHome.Font = new System.Drawing.Font("Yu Gothic UI", 14.25F, System.Drawing.FontStyle.Bold);
-            this.btnHome.Location = new System.Drawing.Point(28, 6);
+            this.btnHome.ForeColor = System.Drawing.Color.Black;
+            this.btnHome.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(198)))), ((int)(((byte)(198)))), ((int)(((byte)(255)))));
+            this.btnHome.ImageAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.btnHome.Location = new System.Drawing.Point(25, 2);
             this.btnHome.Name = "btnHome";
-            this.btnHome.Size = new System.Drawing.Size(116, 35);
-            this.btnHome.TabIndex = 6;
+            this.btnHome.Size = new System.Drawing.Size(116, 37);
+            this.btnHome.TabIndex = 17;
             this.btnHome.Text = "Home";
-            this.btnHome.UseVisualStyleBackColor = false;
             this.btnHome.Click += new System.EventHandler(this.btnHome_Click);
             // 
+<<<<<<< Updated upstream:WinApp Application/Form1.Designer.cs
             // Form1
+=======
+            // pnlBarObtion
+            // 
+            this.pnlBarObtion.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.pnlBarObtion.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pnlBarObtion.BackgroundImage")));
+            this.pnlBarObtion.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pnlBarObtion.BorderColor = System.Drawing.Color.Transparent;
+            this.pnlBarObtion.BorderRadius = 10;
+            this.pnlBarObtion.BorderThickness = 1;
+            this.pnlBarObtion.Controls.Add(this.btnBarAbout);
+            this.pnlBarObtion.Controls.Add(this.btnBarSupport);
+            this.pnlBarObtion.Controls.Add(this.btnBarSetting);
+            this.pnlBarObtion.Location = new System.Drawing.Point(709, 178);
+            this.pnlBarObtion.Name = "pnlBarObtion";
+            this.pnlBarObtion.ShowBorders = true;
+            this.pnlBarObtion.Size = new System.Drawing.Size(169, 144);
+            this.pnlBarObtion.TabIndex = 6;
+            this.pnlBarObtion.Visible = false;
+            this.pnlBarObtion.MouseEnter += new System.EventHandler(this.pnlBarObtion_MouseEnter);
+            this.pnlBarObtion.MouseLeave += new System.EventHandler(this.pnlBarObtion_MouseLeave);
+            this.pnlBarObtion.MouseHover += new System.EventHandler(this.pnlBarObtion_MouseHover);
+            // 
+            // btnBarAbout
+            // 
+            this.btnBarAbout.Animated = true;
+            this.btnBarAbout.AnimatedGIF = true;
+            this.btnBarAbout.BackColor = System.Drawing.Color.Transparent;
+            this.btnBarAbout.BorderRadius = 8;
+            this.btnBarAbout.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnBarAbout.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnBarAbout.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnBarAbout.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnBarAbout.FillColor = System.Drawing.Color.White;
+            this.btnBarAbout.Font = new System.Drawing.Font("Yu Gothic UI", 14.25F, System.Drawing.FontStyle.Bold);
+            this.btnBarAbout.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.btnBarAbout.Image = ((System.Drawing.Image)(resources.GetObject("btnBarAbout.Image")));
+            this.btnBarAbout.ImageAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.btnBarAbout.Location = new System.Drawing.Point(13, 95);
+            this.btnBarAbout.Name = "btnBarAbout";
+            this.btnBarAbout.Size = new System.Drawing.Size(142, 35);
+            this.btnBarAbout.TabIndex = 16;
+            this.btnBarAbout.Text = "About";
+            this.btnBarAbout.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btnBarAbout.Click += new System.EventHandler(this.btnBarAbout_Click);
+            // 
+            // btnBarSupport
+            // 
+            this.btnBarSupport.Animated = true;
+            this.btnBarSupport.AnimatedGIF = true;
+            this.btnBarSupport.BackColor = System.Drawing.Color.Transparent;
+            this.btnBarSupport.BorderRadius = 8;
+            this.btnBarSupport.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnBarSupport.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnBarSupport.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnBarSupport.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnBarSupport.FillColor = System.Drawing.Color.White;
+            this.btnBarSupport.Font = new System.Drawing.Font("Yu Gothic UI", 14.25F, System.Drawing.FontStyle.Bold);
+            this.btnBarSupport.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.btnBarSupport.Image = ((System.Drawing.Image)(resources.GetObject("btnBarSupport.Image")));
+            this.btnBarSupport.ImageAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.btnBarSupport.Location = new System.Drawing.Point(13, 54);
+            this.btnBarSupport.Name = "btnBarSupport";
+            this.btnBarSupport.Size = new System.Drawing.Size(142, 35);
+            this.btnBarSupport.TabIndex = 15;
+            this.btnBarSupport.Text = "Support";
+            this.btnBarSupport.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btnBarSupport.Click += new System.EventHandler(this.btnBarSupport_Click);
+            // 
+            // btnBarSetting
+            // 
+            this.btnBarSetting.Animated = true;
+            this.btnBarSetting.AnimatedGIF = true;
+            this.btnBarSetting.BackColor = System.Drawing.Color.Transparent;
+            this.btnBarSetting.BorderRadius = 8;
+            this.btnBarSetting.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnBarSetting.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnBarSetting.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnBarSetting.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnBarSetting.FillColor = System.Drawing.Color.White;
+            this.btnBarSetting.Font = new System.Drawing.Font("Yu Gothic UI", 14.25F, System.Drawing.FontStyle.Bold);
+            this.btnBarSetting.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.btnBarSetting.Image = ((System.Drawing.Image)(resources.GetObject("btnBarSetting.Image")));
+            this.btnBarSetting.ImageAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.btnBarSetting.Location = new System.Drawing.Point(13, 13);
+            this.btnBarSetting.Name = "btnBarSetting";
+            this.btnBarSetting.Size = new System.Drawing.Size(142, 35);
+            this.btnBarSetting.TabIndex = 14;
+            this.btnBarSetting.Text = "Setting";
+            this.btnBarSetting.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btnBarSetting.Click += new System.EventHandler(this.btnBarSetting_Click);
+            // 
+            // Main_Form
+>>>>>>> Stashed changes:WinApp Application/MainForm.Designer.cs
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Gainsboro;
+<<<<<<< Updated upstream:WinApp Application/Form1.Designer.cs
             this.ClientSize = new System.Drawing.Size(890, 523);
             this.Controls.Add(this.bunifuPanel2);
+=======
+            this.ClientSize = new System.Drawing.Size(898, 523);
+            this.Controls.Add(this.pnlBarObtion);
+            this.Controls.Add(this.pnlmenu);
+>>>>>>> Stashed changes:WinApp Application/MainForm.Designer.cs
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
             this.Name = "Form1";
             this.Text = "WinApp";
             this.Load += new System.EventHandler(this.Form1_Load);
+            this.MouseHover += new System.EventHandler(this.Main_Form_MouseHover);
             this.panel1.ResumeLayout(false);
+<<<<<<< Updated upstream:WinApp Application/Form1.Designer.cs
             ((System.ComponentModel.ISupportInitialize)(this.bunifuPictureBox1)).EndInit();
             this.bunifuPanel2.ResumeLayout(false);
+=======
+            this.pnlmenu.ResumeLayout(false);
+            this.pnlBarObtion.ResumeLayout(false);
+>>>>>>> Stashed changes:WinApp Application/MainForm.Designer.cs
             this.ResumeLayout(false);
 
         }
@@ -313,6 +555,7 @@ namespace WinApp_Application
 
         private System.Windows.Forms.Panel panel1;
         private Bunifu.UI.WinForms.BunifuTextBox bunifuTextBox1;
+<<<<<<< Updated upstream:WinApp Application/Form1.Designer.cs
         private System.Windows.Forms.Button btnProfile;
         private System.Windows.Forms.Button button2;
         private Bunifu.UI.WinForms.BunifuPanel bunifuPanel2;
@@ -323,6 +566,21 @@ namespace WinApp_Application
         private System.Windows.Forms.Button button5;
         private Bunifu.UI.WinForms.BunifuPictureBox bunifuPictureBox1;
         private System.Windows.Forms.Button button1;
+=======
+        internal Bunifu.UI.WinForms.BunifuPanel pnlmenu;
+        private Guna.UI2.WinForms.Guna2Button btnBar;
+        private Guna.UI2.WinForms.Guna2Button button1;
+        private Bunifu.UI.WinForms.BunifuPanel pnlBarObtion;
+        private Guna.UI2.WinForms.Guna2Button btnBarAbout;
+        private Guna.UI2.WinForms.Guna2Button btnBarSupport;
+        private Guna.UI2.WinForms.Guna2Button btnBarSetting;
+        private Guna.UI2.WinForms.Guna2Button btnHome;
+        private Guna.UI2.WinForms.Guna2Button btnTopChar;
+        private Guna.UI2.WinForms.Guna2Button btnKids;
+        private Guna.UI2.WinForms.Guna2Button btnGaming;
+        private Guna.UI2.WinForms.Guna2Button btncategory;
+        private Bunifu.UI.WinForms.BunifuPanel pnlSlide;
+>>>>>>> Stashed changes:WinApp Application/MainForm.Designer.cs
     }
 }
 
