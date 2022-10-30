@@ -1,7 +1,7 @@
 ﻿
 namespace WinApp_Application
 {
-    partial class ApplicationItems
+    partial class UC_ApplicationItems
     {
         /// <summary> 
         /// Required designer variable.
@@ -29,7 +29,7 @@ namespace WinApp_Application
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ApplicationItems));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UC_ApplicationItems));
             this.imageAppli = new Bunifu.UI.WinForms.BunifuImageButton();
             this.txtAppname = new Bunifu.UI.WinForms.BunifuLabel();
             this.txtPriceApp = new Bunifu.UI.WinForms.BunifuLabel();
@@ -55,7 +55,7 @@ namespace WinApp_Application
             this.imageAppli.ImageSize = new System.Drawing.Size(95, 88);
             this.imageAppli.ImageZoomSize = new System.Drawing.Size(115, 108);
             this.imageAppli.InitialImage = ((System.Drawing.Image)(resources.GetObject("imageAppli.InitialImage")));
-            this.imageAppli.Location = new System.Drawing.Point(1, 1);
+            this.imageAppli.Location = new System.Drawing.Point(3, 1);
             this.imageAppli.Name = "imageAppli";
             this.imageAppli.Rotation = 0;
             this.imageAppli.ShowActiveImage = true;
@@ -68,6 +68,7 @@ namespace WinApp_Application
             this.imageAppli.WaitOnLoad = false;
             this.imageAppli.Zoom = 20;
             this.imageAppli.ZoomSpeed = 10;
+            this.imageAppli.Click += new System.EventHandler(this.imageAppli_Click);
             // 
             // txtAppname
             // 
@@ -110,7 +111,7 @@ namespace WinApp_Application
             this.Controls.Add(this.txtAppname);
             this.Controls.Add(this.imageAppli);
             this.Name = "ApplicationItems";
-            this.Size = new System.Drawing.Size(118, 154);
+            this.Size = new System.Drawing.Size(121, 154);
             this.Load += new System.EventHandler(this.ApplicationItems_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

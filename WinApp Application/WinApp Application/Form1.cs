@@ -11,18 +11,23 @@ using System.Windows.Forms;
 
 namespace WinApp_Application
 {
-    public partial class Main_Form : Form
+    public partial class Form1 : Form
     {
-        static UC_Home home = new UC_Home();
+        static Home_UC home = new Home_UC();
         static TopChartPage_UC TopChart = new TopChartPage_UC();
         static KidsPage_UC Kids = new KidsPage_UC();
         static GamingPage_UC Gaming = new GamingPage_UC();
+<<<<<<< Updated upstream:WinApp Application/Form1.cs
+        static Add_App_UC application = new Add_App_UC();
+        public Form1()
+=======
         static Developer_Mode_UC application = new Developer_Mode_UC();
         UC_Setting UCS = new UC_Setting();
         UC_Support UCSU = new UC_Support();
         UC_About UCA = new UC_About();
         
         public Main_Form()
+>>>>>>> Stashed changes:WinApp Application/MainForm.cs
         {
             InitializeComponent();
         }
@@ -50,7 +55,7 @@ namespace WinApp_Application
         }
          
 
-        internal void NavigationUC(String UC)
+        public void NavigationUC(String UC)
         {
             switch (UC)
             {
@@ -58,7 +63,7 @@ namespace WinApp_Application
                 case "home":
                     Clearform();
                     this.Controls.Add(home);
-                    home.Location = new Point(5, 105);
+                    home.Location = new Point(12, 105);
                     pnlSlide.Location = new Point(3, 43);
 
                     break;
@@ -67,7 +72,7 @@ namespace WinApp_Application
                 case "topchart":                    
                     Clearform();
                     this.Controls.Add(TopChart);
-                    TopChart.Location = new Point(3, 105);
+                    TopChart.Location = new Point(12, 105);
                     pnlSlide.Location = new Point(194, 43);
                     break;
 
@@ -75,7 +80,7 @@ namespace WinApp_Application
                 case "kids":
                     Clearform();
                     this.Controls.Add(Kids);
-                    Kids.Location = new Point(3, 105);
+                    Kids.Location = new Point(12, 105);
                     pnlSlide.Location = new Point(370, 43);
                     break;
 
@@ -83,15 +88,19 @@ namespace WinApp_Application
                 case "gaming":
                     Clearform();
                     this.Controls.Add(Gaming);
-                    Gaming.Location = new Point(3, 105);
+                    Gaming.Location = new Point(12, 105);
                     pnlSlide.Location = new Point(546, 43);
                     break;
 
                 case "Application":
                     Clearform();
                     this.Controls.Add(application);
+<<<<<<< Updated upstream:WinApp Application/Form1.cs
+                    application.Location = new Point(12, 105);
+=======
                     application.Location = new Point(0, 50);
                     pnlSlide.Location = new Point(726, 45);
+>>>>>>> Stashed changes:WinApp Application/MainForm.cs
                     break;
 
                 case "Setting":
@@ -138,7 +147,6 @@ namespace WinApp_Application
 
         private void button1_Click_2(object sender, EventArgs e)
         {
-            pnlmenu.Visible = false;
             NavigationUC("Application");
         }
 
@@ -146,6 +154,8 @@ namespace WinApp_Application
         {
             //BackColor = Color.Transparent;
         }
+<<<<<<< Updated upstream:WinApp Application/Form1.cs
+=======
         //internal void Remove_uc()
         //{
         //    foreach (Control C in this.Controls)
@@ -293,5 +303,6 @@ namespace WinApp_Application
             pnlmenu.Visible = false;
             NavigationUC("About");
         }
+>>>>>>> Stashed changes:WinApp Application/MainForm.cs
     }
 }

@@ -137,20 +137,8 @@
     <Reference Include="Bunifu.UI.WinForms.Deprecated, Version=5.3.0.0, Culture=neutral, PublicKeyToken=e8e24ccd28363fe9, processorArchitecture=MSIL">
       <HintPath>..\packages\Bunifu.UI.WinForms.5.3.0\lib\net40\Bunifu.UI.WinForms.Deprecated.dll</HintPath>
     </Reference>
-    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
-      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
-    </Reference>
-    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
-      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
-    </Reference>
-    <Reference Include="Guna.UI2, Version=2.0.3.5, Culture=neutral, PublicKeyToken=4015e4865bda28a4, processorArchitecture=MSIL">
-      <HintPath>..\packages\Guna.UI2.WinForms.2.0.3.5\lib\net40\Guna.UI2.dll</HintPath>
-    </Reference>
     <Reference Include="System" />
-    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
-    <Reference Include="System.Runtime.Serialization" />
-    <Reference Include="System.Security" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -174,12 +162,11 @@
     <Compile Include="ApplicationItems.Designer.cs">
       <DependentUpon>ApplicationItems.cs</DependentUpon>
     </Compile>
-    <Compile Include="CLs_Info.cs" />
-    <Compile Include="MainForm.cs">
+    <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="MainForm.Designer.cs">
-      <DependentUpon>MainForm.cs</DependentUpon>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
     <Compile Include="GamingPage_UC.cs">
       <SubType>UserControl</SubType>
@@ -187,17 +174,11 @@
     <Compile Include="GamingPage_UC.Designer.cs">
       <DependentUpon>GamingPage_UC.cs</DependentUpon>
     </Compile>
-    <Compile Include="UC_CategoryItem.cs">
+    <Compile Include="Home_UC.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="UC_CategoryItem.Designer.cs">
-      <DependentUpon>UC_CategoryItem.cs</DependentUpon>
-    </Compile>
-    <Compile Include="UC_Home.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="UC_Home.Designer.cs">
-      <DependentUpon>UC_Home.cs</DependentUpon>
+    <Compile Include="Home_UC.Designer.cs">
+      <DependentUpon>Home_UC.cs</DependentUpon>
     </Compile>
     <Compile Include="KidsPage_UC.cs">
       <SubType>UserControl</SubType>
@@ -225,6 +206,36 @@
     <Compile Include="UC_About.Designer.cs">
       <DependentUpon>UC_About.cs</DependentUpon>
     </Compile>
+    <Compile Include="UC_Category_item.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC_Category_item.Designer.cs">
+      <DependentUpon>UC_Category_item.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC_DM_AddApp.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC_DM_AddApp.Designer.cs">
+      <DependentUpon>UC_DM_AddApp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC_DM_DeleteApp.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC_DM_DeleteApp.Designer.cs">
+      <DependentUpon>UC_DM_DeleteApp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC_DM_ManageAPP.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC_DM_ManageAPP.Designer.cs">
+      <DependentUpon>UC_DM_ManageAPP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC_DM_ManageDevInfo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC_DM_ManageDevInfo.Designer.cs">
+      <DependentUpon>UC_DM_ManageDevInfo.cs</DependentUpon>
+    </Compile>
     <Compile Include="UC_Setting.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -243,17 +254,14 @@
     <EmbeddedResource Include="ApplicationItems.resx">
       <DependentUpon>ApplicationItems.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="MainForm.resx">
-      <DependentUpon>MainForm.cs</DependentUpon>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GamingPage_UC.resx">
       <DependentUpon>GamingPage_UC.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UC_CategoryItem.resx">
-      <DependentUpon>UC_CategoryItem.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="UC_Home.resx">
-      <DependentUpon>UC_Home.cs</DependentUpon>
+    <EmbeddedResource Include="Home_UC.resx">
+      <DependentUpon>Home_UC.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="KidsPage_UC.resx">
       <DependentUpon>KidsPage_UC.cs</DependentUpon>
@@ -277,6 +285,21 @@
     <EmbeddedResource Include="UC_About.resx">
       <DependentUpon>UC_About.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="UC_Category_item.resx">
+      <DependentUpon>UC_Category_item.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC_DM_AddApp.resx">
+      <DependentUpon>UC_DM_AddApp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC_DM_DeleteApp.resx">
+      <DependentUpon>UC_DM_DeleteApp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC_DM_ManageAPP.resx">
+      <DependentUpon>UC_DM_ManageAPP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC_DM_ManageDevInfo.resx">
+      <DependentUpon>UC_DM_ManageDevInfo.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UC_Setting.resx">
       <DependentUpon>UC_Setting.cs</DependentUpon>
     </EmbeddedResource>
@@ -297,11 +320,14 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+<<<<<<< Updated upstream
+=======
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <ItemGroup>
     <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
+>>>>>>> Stashed changes
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -55,7 +55,7 @@ namespace WinApp_Application
             this.imageAppli.ImageSize = new System.Drawing.Size(95, 88);
             this.imageAppli.ImageZoomSize = new System.Drawing.Size(115, 108);
             this.imageAppli.InitialImage = ((System.Drawing.Image)(resources.GetObject("imageAppli.InitialImage")));
-            this.imageAppli.Location = new System.Drawing.Point(1, 1);
+            this.imageAppli.Location = new System.Drawing.Point(3, 1);
             this.imageAppli.Name = "imageAppli";
             this.imageAppli.Rotation = 0;
             this.imageAppli.ShowActiveImage = true;
@@ -110,7 +110,7 @@ namespace WinApp_Application
             this.Controls.Add(this.txtAppname);
             this.Controls.Add(this.imageAppli);
             this.Name = "ApplicationItems";
-            this.Size = new System.Drawing.Size(118, 154);
+            this.Size = new System.Drawing.Size(121, 154);
             this.Load += new System.EventHandler(this.ApplicationItems_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
